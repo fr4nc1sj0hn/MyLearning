@@ -4,6 +4,7 @@ import Pmw
 class SLabel(Frame):
 	"""SLabel defines a 2-sided label within a Frame. The
 		left hand label has blue letters; the right has white letters."""
+		
 	def __init__(self, master, left1, right1):
 		Frame.__init__(self, master, bg = 'gray40')
 		self.pack(side = LEFT, expand = YES, fill = BOTH)
@@ -16,4 +17,3 @@ class SLabel(Frame):
 			side = RIGHT, expand = YES, fill = BOTH)
 
 class Key(Button):
-	
